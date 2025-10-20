@@ -1,17 +1,18 @@
-import { useState } from 'react'
 
 import './App.css'
-import Button from './components/button';
+
+import Card from './components/card';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Button onClick={() => setCount((count) => count + 1)}>
-      Click Me
-    </Button>
-    <p>Count: {count}</p>
+     <Card 
+      title = "I am"
+      content="Very sad"
+
+     ></Card>
+
     </>
   )
 }
