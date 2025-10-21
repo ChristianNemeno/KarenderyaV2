@@ -9,7 +9,7 @@ type NavbarProps = {
 
 const Navbar: React.FC<NavbarProps> = ({ logo = "MyApp", links = []}) => {
     return (
-        <nav>
+        <nav className="bg-blue-500 text-white p-4">
             <div>
                 <a href="#">{logo}</a>
             </div>
@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo = "MyApp", links = []}) => {
                         {link.name}
                     </a>
                 ))}
-                
+
             </div>
         </nav>
     );
