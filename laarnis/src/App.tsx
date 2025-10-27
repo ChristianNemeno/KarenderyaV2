@@ -2,6 +2,7 @@
 import './App.css'
 
 import Card from './components/card';
+import Grid from './components/grid';
 import Navbar from './components/navbar';
 import { Section } from './components/section';
 
@@ -29,6 +30,29 @@ function App() {
     <Section background='dark' fullHeight={false} >
       <h2 className="text-2xl font-bold">SECTION F1</h2>
     </Section>
+
+
+    <Grid cols={4} gap='lg' className='p-4'>
+      <Card 
+        title = "Card 1"
+        content="This is the content of card 1."
+      />
+      <Card 
+        title = "Card 2"
+        content="This is the content of card 2."
+      />
+      <Card 
+        title = "Card 3"
+        content="This is the content of card 3."
+      />
+      <Card 
+        title = "Card 4"
+        content="This is the content of card 4."
+      />
+    </Grid>
+      
+
+      
 
     </>
   )
