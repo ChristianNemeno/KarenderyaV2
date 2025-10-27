@@ -9,6 +9,27 @@ type GridProps = {
     className?: string;
 }
 
+/**
+ * Proper definition for this grid component.
+ * Grid component for displaying a grid layout.
+ * @param param0 - Props for the grid component.
+ * @returns JSX.Element
+ * 
+ * notes to self:
+ * i didnt use number type for cols because it would allow any number,
+ * for simplicity i limited it to common grid column counts.
+ * 
+ * in case you forgot the code below basically means a grid when used as component, 
+ * accepts the following props, and it follows the type props defined above.
+ * 
+ * @example
+ * <Grid cols={4} gap='lg' className='custom-class'>
+ *   <div>Item 1</div> 
+ *   <div>Item 2</div>
+ *   <div>Item 3</div>
+ *   <div>Item 4</div>
+ * </Grid>
+ */
 const Grid: React.FC<GridProps> = ({
     children,
     cols = 3,
