@@ -5,13 +5,6 @@ import Card from './components/card';
 import Grid from './components/grid';
 import Navbar from './components/navbar';
 import { Section } from './components/section';
-import Sidebar, { 
-  SidebarHeader, 
-  SidebarContent, 
-  SidebarFooter, 
-  SidebarItem,
-  SidebarGroup 
-} from './components/sidebar';
 
 function App() {
 
@@ -23,47 +16,6 @@ function App() {
 
   return (
     <>
-
-        <Sidebar width="md" variant="responsive" bg="bg-gray-900">
-        {/* Header */}
-        <SidebarHeader>
-          <h1 className="text-2xl font-bold">Karenderya</h1>
-          <p className="text-sm text-gray-400">Admin Dashboard</p>
-        </SidebarHeader>
-
-        {/* Content */}
-        <SidebarContent>
-          {/* Main Navigation */}
-          <SidebarGroup title="Main">
-            <SidebarItem icon="📊" active href="/">
-              Dashboard
-            </SidebarItem>
-            <SidebarItem icon="📦" href="/products">
-              Products
-            </SidebarItem>
-            <SidebarItem icon="🛒" href="/orders">
-              Orders
-            </SidebarItem>
-          </SidebarGroup>
-
-          {/* Settings */}
-          <SidebarGroup title="Settings">
-            <SidebarItem icon="👤" href="/profile">
-              Profile
-            </SidebarItem>
-            <SidebarItem icon="⚙️" href="/settings">
-              Settings
-            </SidebarItem>
-          </SidebarGroup>
-        </SidebarContent>
-
-        {/* Footer */}
-        <SidebarFooter>
-          <p className="text-sm text-gray-400">© 2025 Karenderya</p>
-        </SidebarFooter>
-      </Sidebar>
-
-
     <Navbar
       logo="Karenderya"
       links={navLinks}
