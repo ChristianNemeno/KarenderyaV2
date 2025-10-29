@@ -5,6 +5,7 @@ import Card from './components/card';
 import Grid from './components/grid';
 import Navbar from './components/navbar';
 import { Section } from './components/section';
+import Sidebar from './components/sidebar'
 
 function App() {
 
@@ -21,6 +22,14 @@ function App() {
       links={navLinks}
     />
 
+    <Sidebar width = "md" position = "left" >
+      <div>
+          <ul>sad</ul>
+          <ul>me</ul>
+          <ul>asf</ul>
+      </div>
+      
+    </Sidebar>
 
 
 
