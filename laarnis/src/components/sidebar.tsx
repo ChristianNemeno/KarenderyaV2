@@ -62,6 +62,12 @@ const Sidebar: React.FC<SidebarProps> = ({
       {children}
     </aside>
   );
+
+
+type SectionProps = {
+    children: React.ReactNode;
+    className?: string;
+};
    
 }
 
